@@ -1,0 +1,32 @@
+<p class="font-weight-bold font-title-pages"><label for="" translate="LESSON.ARRAY"></label></p>
+<hr>
+<div class="row">
+    <div class="col-sm">
+        <div class="list-group">
+            <a href="#" class="list-group-item active waves-light" mdbWavesEffect>
+                Skills
+            </a>
+            <div *ngFor="let like of liked; let i = index;">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <a href="#" class="list-group-item list-group-item-action waves-light" mdbWavesEffect>{{i+1}} : {{like}}</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <button mdbBtn type="button" color="danger" outline="true" (click)="removeData(i)" mdbWavesEffect>Delete</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<form (submit)="addData(data.value)">
+    <div class="row">
+        <div class="col-sm">
+            <div class="md-form">
+                <input mdbInputDirective #data type="text" id="form1" class="form-control">
+                <label for="form1" class="">Add Skill</label>
+            </div>
+        </div>
+    </div>
+</form>

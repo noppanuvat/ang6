@@ -1,0 +1,25 @@
+{
+    "NAVBAR": {
+        "HOME": "Home",
+        "TITLE": "Training"
+    },
+    "HOME": {
+        "TITLE": "Basic Angular",
+        "PROFILE": "Profile User",
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "ADDRESS": {
+            "TITLE": "Address",
+            "VILLAGENO": "VillageNo",
+            "DISTRICT": "District",
+            "PROVINCE": "Province",
+            "POSTCODE": "Post Code"
+        }
+    },
+    "LESSON": {
+        "ARRAY": "Array",
+        "COOKIE": "Cookie",
+        "WEBSTORAGE": "Web Storage",
+        "HTTPCLIENT": "Http Client"
+    }
+}

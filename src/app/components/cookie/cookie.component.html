@@ -1,0 +1,26 @@
+<p class="font-weight-bold font-title-pages"><label for="" translate="LESSON.COOKIE"></label></p>
+<hr>
+<div class="row">
+    <div class="col-sm">
+        <div class="md-form">
+            <input mdbInputDirective [(ngModel)]="cookieValueString" type="text" id="form1" class="form-control">
+            <label for="form1" class="">Add value to cookie.</label>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <button mdbBtn type="button" color="success" outline="true" (click)="setCookie()" mdbWavesEffect>Set Cookie</button>
+    <button mdbBtn type="button" color="info" outline="true" (click)="getCookie()" mdbWavesEffect>Get Cookie</button>
+    <button mdbBtn type="button" color="warning" outline="true" (click)="delCookie()" mdbWavesEffect>Delete Cookie</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <div class="alert alert-success animated fadeIn" [hidden]="!alertFlg" role="alert">
+      <h4 class="alert-heading">Cookie!</h4>
+      <p>{{cookieMessage}}</p>
+    </div>
+  </div>
+</div>

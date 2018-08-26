@@ -1,0 +1,46 @@
+<p class="font-weight-bold font-title-pages"><label for="" translate="LESSON.WEBSTORAGE"></label></p>
+<hr>
+<div class="row">
+  <div class="col-sm">
+    <p class="font-weight-normal"> Local Storage </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <button mdbBtn type="button" color="success" outline="true" (click)="setLocalSroreage()" mdbWavesEffect>Set Localstorage</button>
+    <button mdbBtn type="button" color="info" outline="true" (click)="getLocalSroreage()" mdbWavesEffect>Get Localstorage</button>
+    <button mdbBtn type="button" color="warning" outline="true" (click)="delLocalSroreage()" mdbWavesEffect>Delete Localstorage</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <div class="alert alert-success animated fadeIn" [hidden]="!localAlertFlg" role="alert">
+      <h4 class="alert-heading">Local Storage!</h4>
+      <p>{{lMessage}}</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <p class="font-weight-normal"> Session Storage </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <button mdbBtn type="button" color="success" outline="true" (click)="setSessionSroreage()" mdbWavesEffect>Set Sessionstorage</button>
+    <button mdbBtn type="button" color="info" outline="true" (click)="getSessionSroreage()" mdbWavesEffect>Get Sessionstorage</button>
+    <button mdbBtn type="button" color="warning" outline="true" (click)="delSessionSroreage()" mdbWavesEffect>Delete Sessionstorage</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <div class="alert alert-success animated fadeIn" [hidden]="!sessionAlertFlg" role="alert">
+      <h4 class="alert-heading">Session Storage!</h4>
+      <p>{{sMessage}}</p>
+    </div>
+  </div>
+</div>
+<br> 
