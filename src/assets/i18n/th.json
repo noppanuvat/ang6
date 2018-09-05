@@ -1,0 +1,25 @@
+{
+    "NAVBAR": {
+        "HOME": "หน้าหลัก",
+        "TITLE": "Training"
+    },
+    "HOME": {
+        "TITLE": "Basic Angular",
+        "PROFILE": "ข้อมูลผู้ใช้",
+        "NAME": "ชื่อ-สกุล",
+        "EMAIL": "อีเมล์",
+        "ADDRESS": {
+            "TITLE": "ที่อยู่",
+            "VILLAGENO": "เลขที่",
+            "DISTRICT": "อำเภอ",
+            "PROVINCE": "จังหวัด",
+            "POSTCODE": "รหัสไปรษณี"
+        }
+    },
+    "LESSON": {
+        "ARRAY": "Array",
+        "COOKIE": "Cookie",
+        "WEBSTORAGE": "Web Storage",
+        "HTTPCLIENT": "Http Client"
+    }
+}

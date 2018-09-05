@@ -20,6 +20,7 @@ import { WebstorageComponent } from "./components/webstorage/webstorage.componen
 import { Ng2Webstorage } from "ngx-webstorage";
 import { HttpClientComponent } from "./components/http-client/http-client.component";
 import { ResourceService } from "./services/resource.service";
+import { THeaderDirective } from './directives/t-header.directive';
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -42,7 +43,8 @@ export function createTranslateLoader(http: HttpClient) {
     ArrayComponent,
     CookieComponent,
     WebstorageComponent,
-    HttpClientComponent
+    HttpClientComponent,
+    THeaderDirective
   ],
   imports: [
     BrowserModule,

@@ -17,13 +17,9 @@ export class WebstorageComponent implements OnInit {
   private st: any;
 
   constructor(
-    translate: TranslateService,
     private localSroreage: LocalStorageService,
     private sessionStorage: SessionStorageService
-  ) {
-    this.translate = translate;
-    translate.setDefaultLang("en");
-  }
+  ) {}
 
   ngOnInit() {}
 

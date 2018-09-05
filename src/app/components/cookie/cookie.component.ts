@@ -13,24 +13,20 @@ export class CookieComponent {
   alertFlg: boolean = false;
   cookieValueString: string;
   private ct: any;
-  
 
-  constructor(
-    translate: TranslateService,
-    private cookieService: CookieService
-  ) {
-    this.translate = translate;
-    translate.setDefaultLang("en");
-  }
+  constructor(private cookieService: CookieService) {}
 
   setCookie() {
-    this.cookieService.set("tCookie", encodeURIComponent(this.cookieValueString || "test"), (new Date().getDate() + 7));
+    this.cookieService.set(
+      "tCookie",
+      encodeURIComponent(this.cookieValueString || "test"),
+      new Date().getDate() + 7
+    );
     this.cookieMessage = "Set cookie success.";
     this.alertMessage();
   }
 
   getCookie() {
-    
     let cookieValue = decodeURIComponent(this.cookieService.get("tCookie"));
     this.cookieMessage = "Get cookie success. Cookie is : " + cookieValue;
     this.alertMessage();

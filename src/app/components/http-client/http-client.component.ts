@@ -1,4 +1,10 @@
-import { Component, OnInit, ViewChildren, QueryList, ElementRef } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  ViewChildren,
+  QueryList,
+  ElementRef
+} from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { ResourceService } from "../../services/resource.service";
 import { Profile } from "../../models/user";
@@ -14,13 +20,9 @@ export class HttpClientComponent implements OnInit {
   url: string = "https://jsonplaceholder.typicode.com/users";
 
   constructor(
-    translate: TranslateService,
     private resourceService: ResourceService,
     private el: ElementRef
-  ) {
-    this.translate = translate;
-    translate.setDefaultLang("en");
-  }
+  ) {}
 
   getUsers() {
     this.resourceService.getUsers(this.url).subscribe(resp => {
@@ -43,7 +45,7 @@ export class HttpClientComponent implements OnInit {
 
   @ViewChildren("pages")
   pages: QueryList<any>;
-  itemsPerPage = 4;
+  itemsPerPage = 2;
   numberOfVisiblePaginators = 10;
   numberOfPaginators: number;
   paginators: Array<any> = [];

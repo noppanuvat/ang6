@@ -11,10 +11,7 @@ export class HomeComponent implements OnInit {
   profileUser: ProfileUser;
   clickEdit: boolean = false;
 
-  constructor(translate: TranslateService) {
-    this.translate = translate;
-    translate.setDefaultLang("en");
-  }
+  constructor() {}
 
   ngOnInit() {
     this.profileUser = {
@@ -30,9 +27,8 @@ export class HomeComponent implements OnInit {
   }
 
   editProfile() {
-    this.clickEdit =! this.clickEdit;
+    this.clickEdit = !this.clickEdit;
   }
-
 }
 
 interface Address {
